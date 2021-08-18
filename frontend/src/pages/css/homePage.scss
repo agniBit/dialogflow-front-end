@@ -1,0 +1,42 @@
+.main_container{
+    background-color: rgb(70, 70, 70);
+    padding: 5vh 7vw;
+    height: 90vh;
+    overflow: hidden;
+    .data_container {
+        max-height: 100%;
+        overflow-y: scroll;
+        .row_container{
+            .intent_row {
+                display: flex;
+                flex-direction: row;
+                color: aliceblue;
+                border-radius: 10px;
+                overflow: hidden;
+                background-color: grey;
+                margin: 10px 0;
+                width: 100%;
+                .row {
+                    overflow: hidden;
+                    flex: 1;
+                    width: 100%;
+                    padding: 5px 30px;
+                    p {
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+                .intent_name {}
+                .intent_display_name {
+                    flex: 3 !important;
+                }
+                .action {
+                    flex: 3 !important;
+                }
+                .folloup_name {}
+                .parent_follow_up {}
+                .context_display {}
+            }
+        }
+    }
+}

@@ -2,13 +2,13 @@
 const dialogflow = require('@google-cloud/dialogflow');
 
 // Instantiates a session client
-const sessionClient = new dialogflow.SessionsClient({keyFilename: './small-talk-qnlq-e9bef07e8351.json'});
+const sessionClient = new dialogflow.SessionsClient({keyFilename: './support-udtr-935ec56fed7a.json'});
 
 // Instantiates clients
-const intentsClient = new dialogflow.IntentsClient({keyFilename: './small-talk-qnlq-e9bef07e8351.json'});
+const intentsClient = new dialogflow.IntentsClient({keyFilename: './support-udtr-935ec56fed7a.json'});
 
 // dialogflow project details
-const projectId = 'small-talk-qnlq'
+const projectId = 'support-udtr'
 const sessionId = 'test'
 const languageCode = 'en'
 

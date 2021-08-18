@@ -1,1 +1,1 @@
-export GOOGLE_APPLICATION_CREDENTIALS="./small-talk-qnlq-e9bef07e8351.json";
+export GOOGLE_APPLICATION_CREDENTIALS="./support-udtr-935ec56fed7a.json";
