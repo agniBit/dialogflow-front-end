@@ -22,9 +22,12 @@ function ShowDetails(data: any) {
   const intent = data.intentData;
   return (
     <div className='details'>
+      <div className='close'>
+        <img className='close_icon' src='/close_icon.png' alt='close' onClick={() => data.showMoreDetails(false)} />
+      </div>
       <div className='details_container'>
-        <h4>Display Name :- </h4>
-        <div className='intent_display_name row'><h4>{intent.displayName}</h4></div>
+        <h3>Display Name :- </h3>
+        <div className='intent_display_name row'><h3>{intent.displayName}</h3></div>
         <h5>Intent name:- </h5>
         <div className='intent_name row'><p>{intent.name}</p></div>
         <h5>Action :- </h5>
@@ -97,7 +100,7 @@ export default function Home(props: { history: any; }) {
           </div>
         </div>
       </div>
-      { (showMoreDetails)? <ShowDetails intentData={displayIntentData} /> : <span className='hidden'></span> }
+      { (showMoreDetails)? <ShowDetails intentData={displayIntentData} showMoreDetails={setShowMoreDetails}/> : <span className='hidden'></span> }
     </div>
   );
 }
