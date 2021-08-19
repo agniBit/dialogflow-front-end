@@ -51,16 +51,12 @@
                         }
                         
                     }
-                    .intent_name {}
                     .intent_display_name {
                         flex: 3 !important;
                     }
                     .action {
                         flex: 3 !important;
                     }
-                    .folloup_name {}
-                    .parent_follow_up {}
-                    .context_display {}
                 }
             }
         }
@@ -119,99 +115,19 @@
     .main_container{
         opacity: 1;
         overflow: hidden;
-        .data {
-            transition: ease-in-out .5s;
-            flex: 1;
-            max-height: 100%;
-            margin-right: 0;
-            h3 {
-                color: white;
-                margin: 0;
-                padding: 10px 0;
-            }
-            .data_container {
-                max-height: 100%;
-                overflow-y: scroll;
-                scroll-behavior: smooth;
-                -ms-overflow-style: none;
-                scrollbar-width: none;
-                &::-webkit-scrollbar {
-                    display: none;
-                }
-                .row_container{
-                    .intent_row {
-                        display: flex;
-                        flex-direction: row;
-                        color: aliceblue;
-                        border-radius: 10px;
-                        overflow: hidden;
-                        background-color: #27282b;
-                        margin: 10px 0;
-                        width: 100%;
-                        transition: ease-in-out .3s;
-                        &:hover {
-                            opacity: 1;
-                        }
-                        .row {
-                            
-                            overflow: hidden;
-                            flex: 1;
-                            width: 100%;
-                            padding: 5px 30px;
-                            p {
-                                margin: 0;
-                                padding: 0;
-                            }
-                            
-                        }
-                        .intent_name {}
-                        .intent_display_name {
-                            flex: 3 !important;
-                        }
-                        .action {
-                            flex: 3 !important;
-                        }
-                        .folloup_name {}
-                        .parent_follow_up {}
-                        .context_display {}
-                    }
-                }
-            }
-            .showMoreDetails {
-                display: none;
-            }
-        }
         .details {
             width: 86vw;
             height: 90vh;
-            // flex: 1;
             background: #1d2027;
             z-index: 10;
             position: absolute;
-            // margin: 0 2vw;
             margin: 0;
-            overflow-y: scroll;
-            scroll-behavior: smooth;
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-            &::-webkit-scrollbar {
-                display: none;
-            }
-            transition: ease-in-out .5s;
-            opacity: 1;
             .close{
                 right: 0;
                 .close_icon {
                     height: 25px;
                     width: 25px;
                 }
-            }
-            .details_container {
-                .row {
-                    p {}
-                }
-                h5 {}
-                h4 {}
             }
         }
     }
