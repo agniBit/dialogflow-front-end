@@ -2,10 +2,10 @@
 const dialogflow = require('@google-cloud/dialogflow');
 
 // Instantiates a session client
-const sessionClient = new dialogflow.SessionsClient({keyFilename: './support-udtr-935ec56fed7a.json'});
+const sessionClient = new dialogflow.SessionsClient();
 
 // Instantiates clients
-const intentsClient = new dialogflow.IntentsClient({keyFilename: './support-udtr-935ec56fed7a.json'});
+const intentsClient = new dialogflow.IntentsClient();
 
 // dialogflow project details
 const projectId = 'support-udtr'

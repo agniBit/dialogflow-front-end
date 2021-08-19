@@ -17,10 +17,8 @@ export default function Home(props: { history: any; }) {
     };
     axios(config).then(function (response: any) {
       setIntentData(response.data)
-      console.log(JSON.stringify(response.data));
     })
       .catch(function (error: any) {
-        console.log(error);
       });
   }, [setIntentData]);
 

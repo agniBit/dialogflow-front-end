@@ -1,9 +1,9 @@
+const path = require('path');
 const express = require('express');
 const routes = require('./routes');
 const app = express();
 
 app.use(express.json());
-
 app.use((req, res, next) => {
     res.set({
       'Access-Control-Allow-Origin': '*',
@@ -13,7 +13,11 @@ app.use((req, res, next) => {
     });
     next()
 })
+app.use(express.static(path.join('../frontend','build')));
 
+app.get('/', function(req,res) {
+  res.sendFile(path.join('../frontend', 'build', 'index.html'));
+})
 
 app.use('/api', routes);
 

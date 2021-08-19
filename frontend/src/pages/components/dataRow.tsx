@@ -1,6 +1,5 @@
 export default function DataRow(data: any) {
   const intent = data.intent;
-  console.log(intent);
   return (
     <div className='intent_row' onClick={() => {
       data.clickHandler(intent);

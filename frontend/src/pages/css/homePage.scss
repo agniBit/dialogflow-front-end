@@ -12,7 +12,7 @@
         margin-right: 2vw;
         overflow: hidden;
         h3 {
-            color: white;
+            color: rgb(192, 192, 192);
             margin: 0;
             padding: 10px 0;
         }
@@ -29,7 +29,7 @@
                 .intent_row {
                     display: flex;
                     flex-direction: row;
-                    color: aliceblue;
+                    color: rgb(192, 192, 192);
                     border-radius: 10px;
                     overflow: hidden;
                     background-color: #27282b;
@@ -37,7 +37,9 @@
                     width: 100%;
                     transition: ease-in-out .3s;
                     &:hover {
+                        color: white;
                         opacity: 1;
+                        background-color: #3d4046;
                     }
                     .row {
                         
@@ -85,7 +87,7 @@
             }
         }
         .details_container {
-            color: white;
+            color: rgb(192, 192, 192);
             .row {
                 overflow: hidden;
                 overflow-wrap: break-word;
